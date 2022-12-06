@@ -1,0 +1,290 @@
+
+* {	
+	box-sizing: border-box;
+}
+	
+html {
+	background-color: rgb(253, 253, 253);
+	font-family: 'Merriweather', serif;
+}
+
+body {
+	background-color: #d2b48c1a;
+}
+
+header h1 {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1em;
+	text-transform: uppercase;
+	background-color: #2d3a46;
+	color: white;
+	padding: 22px 0;
+	font-weight: normal;
+}
+
+header h3 {
+	font-weight: bold;
+	margin: 0;
+	padding: 25px 0 10px;
+}
+
+header p {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.8em;
+	color: rgb(185, 185, 185);
+	padding-bottom: 35px;
+}
+
+header h3,
+header p {
+	text-align: center;
+}
+
+main {
+	width: 90%;
+	max-width: 500px;
+	margin: auto;
+	padding-top: 4px;
+	border-top: 4px solid black;
+}
+
+main section {
+	margin-top: 2px;
+}
+	
+.box-top,
+.box-bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+form fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+form fieldset legend {
+	width: 100%;
+	font-weight: bold;
+	font-size: 1.1em;
+	border-top: 2.4px solid black;
+	padding: 25px 0 7px;
+}
+
+
+.box,
+.box-check,
+.box-radio,
+.box-topics {
+	display: flex;
+}
+
+.box,
+.box-topics {
+	flex-direction: column;
+}
+
+.box-check,
+.box-radio {
+	flex-direction: row;
+	padding-bottom: 15px;
+}
+
+form fieldset label,
+form fieldset:nth-of-type(2) p {
+	color: #848484;
+}
+
+fieldset.box-bottom {
+	background-color: #adadad1a;
+}
+
+form fieldset label {
+	display: block;
+	padding-bottom: 10px;
+	padding-top: 16px;
+	font-size: .9em;
+}
+
+form fieldset input,
+form fieldset select,
+textarea,
+input[type="submit"] {
+	outline-color: #1f598b;
+}
+
+form fieldset input,
+form fieldset select,
+textarea {
+	width: 100%;
+	padding: 14.5px 15px;
+	border: none;
+	background-color: #7d7d7d1a;
+	border-radius: 4px;
+}
+
+form fieldset input:focus,
+form fieldset select:focus,
+textarea:focus {
+	background-color: rgb(255, 255, 255);
+	transition: background-color 1.3s;
+}
+
+form fieldset select {
+	padding-left: 10px;
+	font-size: .85em;
+}
+
+form fieldset input::placeholder,
+form fieldset textarea::placeholder,
+form fieldset select,
+select option[value=""],
+footer {
+	color: darkgrey;
+}
+
+select option {
+color: black;
+}
+
+form fieldset input::placeholder,
+footer {
+	font-style: italic;
+}
+
+form fieldset input::placeholder {
+	font-size: .7em;
+	text-align: right;
+	padding-right: 5px;
+}
+
+form fieldset div:last-child input {
+	width: 50%;
+	max-width: 200px;
+}
+
+form fieldset:nth-of-type(1) {
+	padding-bottom: 30px;
+}
+
+form fieldset:nth-of-type(2) label {
+	display: inline-block;
+	width: calc(100% - 24px);
+	padding: 0;
+}
+
+form fieldset:nth-of-type(2) div:last-child label {
+	padding: 15px 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	width: 12px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+form fieldset:nth-of-type(2) label,
+form fieldset:nth-of-type(2) p,
+form fieldset:nth-of-type(2) label[for="other-topics"] {
+	font-size: .85em;
+}
+
+form fieldset:nth-of-type(2) label[for="other-topics"] {
+	padding-top: 18px;
+}
+
+textarea {
+	height: 93px;
+	resize: none;
+	margin-bottom: 25px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	padding: 17px 0;
+	font-size: 1.15em;
+	background-color: #50c0b5;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 4px;
+}
+
+footer {
+	text-align: center;
+	padding: 15px 0 100px 0;
+}
+
+footer p {
+	margin: 0;
+	padding: 10px 0 25px;
+	font-size: .8em;
+}
+
+
+
+
+/*--  min-width: 768px screen layout  --*/
+
+@media screen and (min-width: 768px) {
+	header p {
+		font-size: .75em;
+		padding-bottom: 38px;
+	}
+
+	main {
+		width: 65%;
+		max-width: 600px;
+	}
+
+	form fieldset legend {
+		padding: 35px 0 20px;
+	}
+
+	.box {
+		flex-direction: row;
+	}
+
+	form fieldset label {
+		display: inline-block;
+		width: 120px;
+		font-size: .75em;
+	}
+
+	form fieldset input,
+	form fieldset select {
+		width: calc(100% - 124px);
+		margin-bottom: 15px;
+	}
+
+	form fieldset div:last-child input {
+		width: 25%;
+	}
+
+	form fieldset:nth-of-type(2) p:first-child {
+		margin: 0 0 22px;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		margin: 0 10px 0 0;
+	}
+
+	form fieldset:nth-of-type(2) label {
+		width: calc(100% - 29px);
+	}
+
+	input[type="submit"] {
+		font-weight: normal;
+	}
+
+	footer {
+		padding-top: 22px;
+	}
+
+}
