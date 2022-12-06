@@ -175,9 +175,7 @@ form fieldset:nth-of-type(2) label {
 	padding: 0;
 }
 
-form fieldset:nth-of-type(2) div:last-child label {
-	padding: 15px 0;
-}
+
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -261,7 +259,7 @@ footer p {
 	}
 
 	form fieldset div:last-child input {
-		width: 25%;
+		width: calc(25% - 31px);
 	}
 
 	form fieldset:nth-of-type(2) p:first-child {
