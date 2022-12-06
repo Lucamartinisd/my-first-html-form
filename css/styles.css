@@ -26,19 +26,16 @@ header h3 {
 	font-weight: bold;
 	margin: 0;
 	padding: 25px 0 10px;
+	text-align: center;
 }
 
 header p {
 	width: 90%;
 	margin: 0 auto;
 	font-size: 0.8em;
+	text-align: center;
 	color: rgb(185, 185, 185);
 	padding-bottom: 35px;
-}
-
-header h3,
-header p {
-	text-align: center;
 }
 
 main {
@@ -74,24 +71,18 @@ form fieldset legend {
 }
 
 .box,
-.box-check,
-.box-radio,
 .box-topics {
 	display: flex;
-}
-
-.box,
-.box-topics {
 	flex-direction: column;
 }
 
 .box-check,
 .box-radio {
+	display: flex;
 	flex-direction: row;
 	padding-bottom: 15px;
 }
 
-form fieldset label,
 form fieldset:nth-of-type(2) p {
 	color: #848484;
 }
@@ -102,26 +93,24 @@ fieldset.box-bottom {
 
 form fieldset label {
 	display: block;
-	padding-bottom: 10px;
-	padding-top: 16px;
 	font-size: .9em;
+	color: #848484;
+	padding-top: 15px;
+	padding-bottom: 10px;
 }
 
-form fieldset input,
-form fieldset select,
-textarea,
 input[type="submit"] {
-	outline-color: #1f598b;
+	outline-color: #1e5a8fdb;
 }
 
 form fieldset input,
-form fieldset select,
 textarea {
 	width: 100%;
 	padding: 14.5px 15px;
-	border: none;
 	background-color: #7d7d7d1a;
 	border-radius: 4px;
+	border: none;
+	outline-color: #1e5a8fdb;
 }
 
 form fieldset input:focus,
@@ -134,21 +123,18 @@ textarea:focus {
 form fieldset select {
 	padding-left: 10px;
 	font-size: .85em;
-}
-
-form fieldset input::placeholder,
-form fieldset textarea::placeholder,
-form fieldset select,
-select option[value=""],
-footer {
-	color: darkgrey;
+	width: 100%;
+	padding: 14.5px 15px;
+	background-color: #7d7d7d1a;
+	border-radius: 4px;
+	border: none;
+	outline-color: #1e5a8fdb;
 }
 
 select option {
 color: black;
 }
 
-form fieldset input::placeholder,
 footer {
 	font-style: italic;
 }
@@ -157,54 +143,63 @@ form fieldset input::placeholder {
 	font-size: .7em;
 	text-align: right;
 	padding-right: 5px;
+	font-style: italic;
+	color: darkgrey;
+}
+
+form fieldset textarea::placeholder,
+form fieldset select,
+select option[value=""],
+footer {
+	color: darkgrey;
 }
 
 form fieldset div:last-child input {
 	width: 50%;
 }
 
-form fieldset:nth-of-type(1) {
-	padding-bottom: 30px;
-}
-
 form fieldset:nth-of-type(2) label {
 	display: inline-block;
+	font-size: .85em;
 	width: calc(100% - 24px);
 	padding: 0;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-	width: 12px;
-	vertical-align: middle;
-	margin-right: 10px;
-}
-
-form fieldset:nth-of-type(2) label,
-form fieldset:nth-of-type(2) p,
-form fieldset:nth-of-type(2) label[for="other-topics"] {
+form fieldset:nth-of-type(2) p {
 	font-size: .85em;
 }
 
+form fieldset:nth-of-type(1) {
+	padding-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+	width: 12px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
 form fieldset:nth-of-type(2) label[for="other-topics"] {
+	font-size: .85em;
 	padding-top: 18px;
 }
 
 textarea {
-	height: 93px;
 	resize: none;
+	height: 90px;
 	margin-bottom: 25px;
 }
 
 input[type="submit"] {
-	width: 100%;
-	padding: 17px 0;
 	font-size: 1.15em;
-	background-color: #50c0b5;
-	color: #fff;
 	font-weight: bold;
+	background-color: #51c4b8;
+	color: #fff;
 	border: none;
-	border-radius: 4px;
+	border-radius: 3.9px;
+	width: 100%;
+	padding: 19px 0;
 }
 
 footer {
@@ -241,25 +236,25 @@ footer p {
 	.box {
 		flex-direction: row;
 	}
-
-	form fieldset label {
-		display: inline-block;
-		width: 120px;
-		font-size: .75em;
-	}
-
-	form fieldset input,
-	form fieldset select {
+	
+	form fieldset select,
+	form fieldset input {
 		width: calc(100% - 124px);
 		margin-bottom: 15px;
 	}
 
-	form fieldset div:last-child input {
-		width: calc(25% - 31px);
+	form fieldset label {
+		display: inline-block;
+		font-size: .75em;
+		width: 120px;
 	}
 
 	form fieldset:nth-of-type(2) p:first-child {
 		margin: 0 0 22px;
+	}
+
+	form fieldset div:last-child input {
+		width: calc(25% - 31px);
 	}
 
 	input[type="checkbox"],
