@@ -163,7 +163,6 @@ form fieldset input::placeholder {
 
 form fieldset div:last-child input {
 	width: 50%;
-	max-width: 200px;
 }
 
 form fieldset:nth-of-type(1) {
